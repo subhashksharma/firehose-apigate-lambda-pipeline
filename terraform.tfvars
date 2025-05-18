@@ -1,0 +1,8 @@
+region               = "us-east-1"
+environment          = "dev"
+lambda_function_name = "firehose-data-reciever-lambda"
+firehose_stream_name = "firehose-to-lambda"
+lambda_handler       = "src/handler.handler"
+lambda_runtime       = "nodejs20.x"
+lambda_zip           = "lambda_function.zip"
+firehose_backup_bucket = "firehose-backup-dev-firehose-data-reciever-lambda"
